@@ -1,54 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-      content="HTML5 Semantic Structure Assignment">
-<title>HTML5 Semantic Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Praveen Kumar K S Portfolio</h1>
-</header>
+  <div class="container">
+    <h1>Quiz App</h1>
 
-<nav aria-label="Main Navigation">
-    <a href="www.linkedin.com/in/praveen-kumar-70a686395">Linkedin Profile</a>
-    <a href="https://drive.google.com/drive/folders/1pKti2Bo2eaEF8d30g_U2_hz9c2uhChDi?usp=drive_link">Projects </a>
-</nav>
+    <button id="startBtn">Start Quiz</button>
 
-<main role="main">
+    <div id="quizBox" class="hidden">
+      <h2 id="question"></h2>
+      <div id="answers"></div>
+    </div>
 
-    <article>
-        <h2>My Full Stack Journey</h2>
+    <div id="result"></div>
+  </div>
 
-        <section>
-            <h3>HTML Day 1</h3>
-            <p>Learning semantic HTML5 elements.</p>
-        </section>
-
-        <section>
-            <h3>Accessibility</h3>
-            <p>Using ARIA labels and semantic tags.</p>
-        </section>
-    </article>
-
-    <aside>
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </aside>
-
-</main>
-
-<footer>
-    <p>Praveen Kumar K S</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
