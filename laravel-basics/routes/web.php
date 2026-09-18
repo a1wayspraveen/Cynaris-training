@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PostController;
+
+Route::resource('posts', PostController::class);
 
 Route::resource('products', ProductController::class);
 
